@@ -2,6 +2,7 @@
 import pandas as pd
 
 # Reading the iput file
+#enter the name of file in terminal wwhich you want to be taken as input
 df = pd.read_csv(input("Enter the name of input file without extension")+".csv")
 
 # function to extract the names of the test from input data
@@ -42,4 +43,5 @@ for name in df.Name:
 
     i+=1
 
+#enter the desired file name you want the file to be saved as
 new_dict.to_csv(input("enter the name for the file to be saved as")+".csv")
